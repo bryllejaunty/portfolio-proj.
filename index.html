@@ -1,103 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brylle Jaunty Allen Egonia | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brylle Jaunty Allen Egonia — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="container header-content">
-      <img src="logo.png" alt="Miport Logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Brylle Jaunty Allen Egonia</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-text animate-fade">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I’m <strong>Brylle Jaunty Allen Egonia</strong> — a BSIT student from the Western Institute of Technology.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <div class="container about-content animate-slide">
-      <div class="about-image">
-        <img src="9cae3e92-48fc-4b99-bcba-c5b4bdec7a44.jpg" alt="Brylle Jaunty Allen Egonia">
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m <strong>Brylle Jaunty Allen Egonia</strong>, 21 years old, from Barangay Ingore, La Paz, Iloilo City.
-          Currently, I’m a 3rd-year BSIT student at the Western Institute of Technology. I specialize in web development, UI design, and database systems.
-        </p>
-        <p>I’m focused on building efficient, beautiful, and user-friendly websites that deliver great experiences.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills">
-    <div class="container animate-fade">
-      <h2>My Skills</h2>
-      <p>I specialize in web development, IT systems, and graphic design — turning concepts into reality through clean and responsive code.</p>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Web Design</h3>
-          <p>Designing responsive, aesthetic websites using HTML, CSS, and basic JavaScript.</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi — I'm <span>Brylle Jaunty Allen Egonia</span></h1>
+          <p>Front-end developer, responsive websites.</p>
+          <a class="btn" href="#projects">See my work</a>
         </div>
-        <div class="skill-card">
-          <h3>IT Systems</h3>
-          <p>Understanding and maintaining IT systems, databases, and troubleshooting network issues.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Graphic Design</h3>
-          <p>Creating visual content and branding such as logos and promotional graphics.</p>
+        <div class="hero-image">
+          <img alt="portrait placeholder" src="9cae3e92-48fc-4b99-bcba-c5b4bdec7a44.jpg" />
         </div>
       </div>
+    </section>
 
-      <div class="skills-image">
-        <img src="7ff5973e-b798-4400-bc0a-bbf9242cca0b.jpeg" alt="Counter Play Project">
-        <img src="catch.jpeg" alt="Catch up">
-        <p class="skills-caption">This is the projects that me and my team make</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact animate-slide">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you’d like to collaborate or learn more, feel free to connect with me.</p>
-      <ul>
-        <li><strong>Email:</strong> bryllejauntyallenegonai@gmail.com</li>
-        <li><strong>Location:</strong> Barangay Ingore, La Paz, Iloilo City</li>
+    <section id="about" class="about container">
+      <h2>About me</h2>
+      <p>I'm Brylle Jaunty Allen Egonia, 21 years old, living in Barangay Ingore Lapaz, Iloilo City.<br>
+        I’m a 3rd-year BSIT student at Western Institute of Technology.
+      </p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Brylle Jaunty Allen Egonia | Web Portfolio</p>
+    <section id="projects" class="projects container">
+      <h2>Selected projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <img src="catch.jpeg" alt="Project 1" />
+          <h3>Project</h3>
+          <p>This is a project that my team and I worked on.</p>
+          <a class="project-link" href="#">View</a>
+        </article>
+
+        <article class="project">
+          <img src="7ff5973e-b798-4400-bc0a-bbf9242cca0b.jpeg" alt="Project 2" />
+          <h3>Project</h3>
+          <p>This is my other project.</p>
+          <a class="project-link" href="#">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Contact Me.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent (demo)')">
+        <label>
+          <span>Name</span>
+          <input type="text" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p> Brylle Jaunty Allen Egonia — Portfolio</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> |
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
-
